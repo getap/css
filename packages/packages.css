@@ -1,0 +1,52 @@
+main {
+    padding-top: 40px;
+}
+
+.packages {
+   border: 2px solid darkgreen;
+   margin: 30px 0;
+   width: 75%;
+   border-left: none;
+}
+.packages:active,
+.packages:hover {
+ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ border-color: #ff5454; 
+}
+.packages a {
+    text-decoration: none;
+    color: inherit;
+    padding: 30px;
+    display: block;
+}
+
+.package__subtitle{
+    color: lightcoral;
+}
+.package__info {
+  border: 1px solid yellowgreen;
+  font-size: 20px;
+  padding: 10px;
+  background: #fff;
+}
+
+.package__info:active,
+.package__info:hover{
+    border-color: #ff5454;
+}
+
+#plus {
+    background: rgba(178, 255, 162, 0.5);
+}
+#free {
+   background: rgba(168, 223, 101, 0.527);
+}
+#premium {
+    background: rgba(162, 254, 89, 0.9);
+}
+#premium .packages__title{
+    color: #fff;
+}
+#premium .package__subtitle {
+    color:  rgba(236, 67, 55, 0.9);   
+}
