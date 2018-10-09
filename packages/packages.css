@@ -11,7 +11,8 @@ main {
 .packages:active,
 .packages:hover {
  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
- border-color: #ff5454; 
+ border-color: #ff5454;        
+ /*border-color: #ff5454 !important;  /* => methode 2 : using important */
 }
 .packages a {
     text-decoration: none;
@@ -34,15 +35,30 @@ main {
 .package__info:hover{
     border-color: #ff5454;
 }
+.clearfix {
+    clear: both;
+}
 
 #plus {
     background: rgba(178, 255, 162, 0.5);
 }
 #free {
    background: rgba(168, 223, 101, 0.527);
+   float: right;
+   border-right: none;
+   text-align: right;
+   border-left: 2px solid darkgreen;
 }
+
+#free:hover,                           /* =>  methods two:for higher specithit*/
+#free:active {
+    border-left-color: #ff5454;
+}
+
+
 #premium {
     background: rgba(162, 254, 89, 0.9);
+    
 }
 #premium .packages__title{
     color: #fff;
