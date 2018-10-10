@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Slabo 27px', serif;
+    margin: 0;
+  /*  font-family: 'VT323', monospace; */
+}
+
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-header__logo {
+    color: brown;
+    text-decoration: none;
+    font-family: 'Monoton', cursive;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.main-header > div {
+    display: inline-block;
+}
+
+.nav-item {
+    text-align: right;
+    display: inline-block;
+    width: calc(100% - 120px);
+    vertical-align: middle;
+
+}
+.nav-item__lists {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item__list {
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+.nav-item__list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-item__list a:hover,
+.nav-item__list a:active {
+ color: black;
+ border: 3px solid black;
+ border-style: dotted; 
+}
+
+.nav-item__list--touch a {
+ color: black;
+ border-radius: 3px;
+ background: #fff;
+ padding: 8px 15px;
+}
+
+.nav-item__list--touch a:hover,
+.nav-item__list--touch a:active {
+    color: #fff;
+    background: black;
+    border: none;
+}
+
+.main-footer {
+    background: #4f4f4f;
+    padding: 30px;
+    margin-top: 10px;
+}
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-link {
+    display: inline-block;
+    margin: 0 15px;
+}
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+.footer-link a:active,
+.footer-link a:hover {
+   color: lightblue;
+}
+
+
+.button {
+    background: green;
+    color: white;
+    font: inherit;
+    padding: 6px;
+    border: green;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+    background: white;
+    color: green;
+}
+.button:focus {
+    outline: none;
+}
