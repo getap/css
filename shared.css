@@ -7,10 +7,15 @@ body {
   /*  font-family: 'VT323', monospace; */
 }
 
+
 .main-header {
     width: 100%;
     background: #2ddf5c;
     padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .main-header__logo {
@@ -30,6 +35,7 @@ body {
     display: inline-block;
     width: calc(100% - 120px);
     vertical-align: middle;
+
 }
 .nav-item__lists {
     margin: 0;
