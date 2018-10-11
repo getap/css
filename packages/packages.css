@@ -5,12 +5,11 @@ main {
 
 .page-background {
     position: fixed;
-    background: url("../images/plan.jpg");
+    background: url("../images/plan.jpg") center/cover;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.4;
-    filter: alpha(opacity=50);
+    filter: grayscale(50%);
 }
 
 .packages {
