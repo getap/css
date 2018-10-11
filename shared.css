@@ -17,17 +17,22 @@ body {
     left: 0;
     z-index: 1;
 }
-
-.main-header__logo {
-    color: brown;
-    text-decoration: none;
-    font-family: 'Monoton', cursive;
-    font-size: 25px;
+.main-header > div {
+    display: inline-block;
     vertical-align: middle;
 }
 
-.main-header > div {
+.main-header__logo {
+  /*  color: brown; */
+    text-decoration: none;
+  /*  font-family: 'Monoton', cursive; */
+    font-size: 25px;
+    height: 40px;
     display: inline-block;
+}
+.main-header__logo img {
+    height: 30px;
+
 }
 
 .nav-item {
@@ -58,8 +63,7 @@ body {
 .nav-item__list a:hover,
 .nav-item__list a:active {
  color: black;
- border: 3px solid black;
- border-style: dotted; 
+ border-bottom: 3px solid white; 
 }
 
 .nav-item__list--touch a {
