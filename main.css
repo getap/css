@@ -28,6 +28,9 @@
 #product h1 {
      color: #fff;
      font-family: 'VT323', monospace;
+     position: absolute;
+     left: 4%;
+     bottom: 4%;
     
  }
 
@@ -41,6 +44,7 @@
 
     font-family: sans-serif;
 }*/
+
 .plan{
      background: lightgreen;
      text-align: center;
