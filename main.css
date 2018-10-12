@@ -2,7 +2,7 @@
 
 #product {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, transparent),
-    url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box fixed, green;
+    url("images/freedom.jpg") left 10% bottom 50%/cover no-repeat border-box fixed, green;
     /*background-image: url("images/freedom.jpg");
     background-size: cover;
     background-repeat: repeat-y; 
@@ -13,10 +13,10 @@
     background: linear-gradient(0deg, red, blue); 
     background: radial-gradient(circle farthest-corner at 30% 50%, red, green); */
     width: 100%;
-    height: 530px;
-    padding: 10px;
+    height: 60vh;
+    padding: 0.83rem;
     position: relative;
-    margin-top: 55px;
+    margin-top: 3rem;
    /* border: 5px dotted red;*/
 }
 
@@ -49,8 +49,8 @@
      background: lightgreen;
      text-align: center;
      display: inline-block;
-     padding: 15px;
-     margin: 30px;
+     padding: 0.93rem;
+     margin: 1rem;
      width: 28%;
      vertical-align: middle;
 
@@ -66,7 +66,7 @@
     color: #2ddf5c;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    padding: 5px;
+    padding: 0.3rem;
 
 }
 .plan__title {
@@ -95,11 +95,11 @@
 
 #key-feat {
     background: tomato;
-    margin-top: 85px;
-    padding: 20px;
+    margin-top: 5.3rem;
+    padding: 1.25rem;
 }
 #key-feat .head-title-two {
-    margin: 15px;
+    margin: 0.93rem;
     color: #fff;
 }
 
@@ -121,10 +121,10 @@
     width: 120px;
     border-radius: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 .key-list__detail {
    text-align: center;
    font-weight: bold;
-   font-size: 20px;
+   font-size: 1.25rem;
 }
