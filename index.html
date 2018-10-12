@@ -22,9 +22,23 @@
 
 <body>
         <div class="backdrop"></div>
-        
+         <div class="modal">
+             <h1 class="modal__title">Do you want to continue?</h1>
+             <div class="modal__actions">
+                 <a href="start-hosting/index.html" class="modal__action">Yes</a>
+                 <button class="modal__action modal__action--negative">No</button>
+             </div>
+         </div>
+
     <header class="main-header">
         <div>
+            
+                <button class="toggle-button">
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                </button>
+            
             <a href="index.html" class="main-header__logo">
              <img src="images/Logo-uHost.png" alt="UHost"></a>
         </div>
@@ -42,6 +56,15 @@
             </ul>
         </nav>
     </header>
+    
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="packages/index.html" class="mobile-nav__item--link">Packages</a></li>
+            <li class="mobile-nav__item"><a href="customers/index.html" class="mobile-nav__item--link">Customers</a></li>
+            <li class="mobile-nav__item"><a href="start_hosting/index.html">Start Hosting</a></li>
+        </ul>
+    </nav>
+
 
     <main>
         <section id="product">
@@ -299,6 +322,6 @@
              </ul>
          </nav>
      </footer>   
-     
+     <script src="shared.js"></script>
 </body>
 </html>

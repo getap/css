@@ -128,3 +128,52 @@
    font-weight: bold;
    font-size: 1.25rem;
 }
+.modal {
+    position: fixed;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 45%;
+    background: wheat;
+    padding: 1em;
+    border: 2px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+    display: none; 
+}
+
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+}
+.modal__actions {
+    text-align: center;
+}
+.modal__action {
+    border: 1px solid green;
+    background: green;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0.4rem;
+    
+}
+.modal__action:hover,
+.modal__action:active {
+    background: white;
+    color: green;
+}
+
+.modal__action--negative {
+    background: red;
+    border-color: red; 
+}
+
+.modal__action--negative:active,
+.modal__action--negative:hover {
+    background: red;
+    border-color: white;
+    color: wheat;
+}
