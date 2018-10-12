@@ -2,7 +2,7 @@
 
 #product {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, transparent),
-    url("images/freedom.jpg") left 10% bottom 50%/cover no-repeat border-box fixed, green;
+    url("images/freedom.jpg") center/cover no-repeat border-box fixed, green;
     /*background-image: url("images/freedom.jpg");
     background-size: cover;
     background-repeat: repeat-y; 
@@ -20,10 +20,7 @@
    /* border: 5px dotted red;*/
 }
 
-.head-title-two {
-    color: #2ddf5c;
-    text-align: center;
-}
+
 
 #product h1 {
      color: #fff;
@@ -31,8 +28,24 @@
      position: absolute;
      left: 4%;
      bottom: 4%;
+    font-size: 1.6rem;
+ }
+/*
+ @media (min-width: 40rem) {
+    #product {
+        height: 45vh;
+        background-position: 50% 25%;
+    }
+    #product h1 {
+     font-size: 3rem;
+    }
     
  }
+ */
+ .head-title-two {
+    color: #2ddf5c;
+    text-align: center;
+}
 
  .plan__block {
      width: 80%;
