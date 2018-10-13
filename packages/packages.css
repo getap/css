@@ -86,3 +86,25 @@ main {
 #premium .package__subtitle {
     color:  rgba(236, 67, 55, 0.9);   
 }
+
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto; 
+        max-width: 1300px; 
+    }
+}
+@media (min-width: 40rem) {
+    .packages {
+        border: 2px solid darkgreen;
+}
+    #free {
+        border-right: 2px solid darkgreen;
+} 
+
+    #free:hover,                        
+    #free:active {
+       border-right-color: #ff5454;
+}
+
+}
