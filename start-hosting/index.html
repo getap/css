@@ -6,7 +6,7 @@
     <title>customer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"  href="../shared.css" />
-    <link rel="stylesheet"  href="customer.css" />
+    <link rel="stylesheet"  href="start-hosting.css" />
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" 
     rel="stylesheet">
 
@@ -36,10 +36,10 @@
                     <a href="../packages/index.html">Packages</a>
                 </li>
                 <li class="nav-item__list">
-                    <a href="index.html">Customers</a>
+                    <a href="../customers/index.html">Customers</a>
                 </li>
                 <li class="nav-item__list nav-item__list--touch">
-                    <a href="../start-hosting/index.html">Start Hosting</a>
+                    <a href="index.html">Start Hosting</a>
                 </li>
             </ul>
         </nav>
@@ -47,45 +47,37 @@
     <nav class="mobile-nav">
             <ul class="mobile-nav__items">
                 <li class="mobile-nav__item"><a href="../packages/index.html" class="mobile-nav__item--link">Packages</a></li>
-                <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__item--link">Customers</a></li>
-                <li class="mobile-nav__item"><a href="../start-hosting/index.html">Start Hosting</a></li>
+                <li class="mobile-nav__item"><a href="../customers/index.html" class="mobile-nav__item--link">Customers</a></li>
+                <li class="mobile-nav__item"><a href="index.html">Start Hosting</a></li>
             </ul>
         </nav>
     
-    <main>
-        <div>
-            <div class="testimonial" id="customer-1">
-              <div class="testimonial__image-container">
-                 <img src="../images/customer-1.jpg" alt="Mike Statham" class="testimonial__image">
-              </div>
+    <main class="signup-page">
+        
+            <h1 class="signup-title">Awesome! Let's Dig in!</h1>
+         
+         <form action="index.html" class="signup-form">
+            
+             <label for="title">Title</label>
+              <select name="title">
+                  <option value="mr">Mr.</option>
+                  <option value="ms">Ms.</option>
+              </select>
+           
 
-              <div class="testimonial__info">
-                      <h1 class="testimonial__name">Mike Statham</h1>
-                      <h2 class="testimonial__subtitle">Founder of 
-                          <a href="tech-analysis.com">tech-analysis.com</a>
-                      </h2>
-                      <p class="testimonial__description">
-                          uHost Helped me relize my Project with high constrained like no time 
-                      </p>       
-              </div>
-            </div>  
-
-            <div class="testimonial" id="customer-2">
-                    <div class="testimonial__info">
-                     <h1 class="testimonial__name">John Mellow</h1>
-                     <h2 class="testimonial__subtitle">Founder of 
-                      Hosts his private videos on uHost
-                     </h2>
-                     <p class="testimonial__description">
-                      i workde on ad blogger and always looked for an integerated i found
-                      it in uHost
-                     </p>       
-                  </div>  
-                  <div class="testimonial__image-container">
-                        <img src="../images/customer-2.jpg" alt="john Mellow" class="testimonial__image">
-                  </div>
-            </div>
-        </div>
+              <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" required>
+              <label for="lastname">Last Name</label>
+                <input type="lastname" id="lastname">
+             <label for="E-Mail">E-Mail</label>
+                <input type="email" id="email" required>
+             <label for="password">Password</label>
+                <input type="password" id="password" required>
+             <input type="checkbox" value="agree" id="checkbox">
+                <label>Agree to <a href="#">Terms & Conditions</a></label> 
+                <button type="submit" class="button" disabled>submit</button>          
+         </form>
+         
     </main>
 
     <footer class="main-footer">
