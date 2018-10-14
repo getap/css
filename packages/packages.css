@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "spaceMono-Bold", monospace;
+    src: url("../spaceMono-Bold.ttf") format("truetype");
+    /* font-display: auto; */
+}
+@font-face {
+    font-family: "spaceMono-Regular", monospace;
+    src: url("../spaceMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
 main {
     padding-top: 2.5rem;
 }
@@ -46,9 +56,22 @@ main {
 }
 .package__info {
   border: 1px solid yellowgreen;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   padding: 0.62rem;
   background: #fff;
+  font: 700 1.2rem 'Space Mono', monospace;
+  /* font: status-bar; */
+  /* font-family: 'Space Mono', monospace; */
+  /* font-weight: 400; */
+  /* font: italic small-caps 700 1.2rem/1 "spaceMono-Bold", monospace ; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-weight: 600; */
+  /* font-style: italic; */
+  /* line-height: 2; */
+  /* text-decoration: underline; */
+  /* text-decoration: overline wavy red; */
+  /* text-shadow: 2px 2px 6px #4f4f4f; */
+  font-variant: small-caps;
 }
 
 .package__info:active,

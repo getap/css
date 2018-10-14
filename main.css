@@ -24,7 +24,7 @@
 
 #product h1 {
      color: #fff;
-     font-family: 'VT323', monospace;
+     font-family: 'Josefin Sans', sans-serif;
      position: absolute;
      left: 4%;
      bottom: 4%;
@@ -94,11 +94,13 @@
     text-align: center;
     color: green;    
   }
+
   .head-title-two {
     text-align: center;
     color: green;
-    font-style: inherit;  
+    font-family: 'Josefin Sans', sans-serif;  
   }
+  
 @media (min-width: 40rem) {
     
     .plan__block {
