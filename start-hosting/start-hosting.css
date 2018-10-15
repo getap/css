@@ -24,6 +24,7 @@ main {
 .signup-form input[id="checkbox"] + label {
     display: inline-block;
     width: auto;
+    vertical-align: middle;
 }
 
 .signup-form input:not([type="checkbox"]),
