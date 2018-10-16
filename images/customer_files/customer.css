@@ -21,9 +21,6 @@
     
     
 }
-#customer-1:hover .testimonial__image-container {
-    animation: flip 1s ease-out forwards;
-}
 .testimonial__info {
     text-align: right;
     padding: 0.875rem;
@@ -88,16 +85,4 @@
         /* display: inline-block; */
     }
     
-}
-
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg) skew(20deg);
-    }
-    50% {
-        transform: rotateY(160deg) skew(20deg);
-    }
-    100% {
-        transform: rotate(360deg) skew(20deg);
-    }
 }

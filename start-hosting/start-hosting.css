@@ -1,8 +1,17 @@
+/* body {
+
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+} */
 main {
     padding: 1.5rem;
+   
 }
 .signup-form {
-    padding-top: 1rem; 
+    padding-top: 1rem;
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem; 
 }
 .signup-form label {
     font-weight: bold;
@@ -16,7 +25,7 @@ main {
 .signup-form input,
 .signup-form select {
     display: block;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     width: 100%;
 }
 
@@ -63,12 +72,24 @@ main {
 
 .signup-form button[type="submit"] {
     display: block;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
 }
 @media (min-width: 40rem) {
     .signup-form {
         margin: auto;
         width: 25rem;
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0.5rem;
     }
 }
+    .signup-form [id="title"] {
+       
+        grid-column: span 2;
+}
+    .signup-form__checked {
+        grid-column: 2 span;
+
+}
+

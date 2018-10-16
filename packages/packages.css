@@ -28,6 +28,7 @@ main {
    width: 75%;
    border-left: none;
    position: relative;
+   overflow: hidden;
 }
 .packages:active,
 .packages:hover {
@@ -44,12 +45,16 @@ main {
 .package__badge{
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     color: white;
     background: #ff5454;
-    margin: 1.25rem;
+    margin: 0;
     font-size: 1.25rem;
     padding: 0.562rem;
+    transform: rotateZ(45deg) translateX(2rem) translateY(-1rem);
+    width: 10rem;
+    text-align: center;
+    transform-origin: center;
 }
 .package__subtitle{
     color: lightcoral;

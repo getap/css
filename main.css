@@ -166,6 +166,10 @@
 }
 .modal {
     position: fixed;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity 200ms, transform 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    /* transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);  */
     z-index: 200;
     top: 20%;
     left: 30%;
@@ -174,7 +178,8 @@
     padding: 1em;
     border: 2px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
-    display: none; 
+    /* display: none; */
+
 }
 
 .modal__title {

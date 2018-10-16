@@ -31,14 +31,12 @@ main {
 .backdrop {
     position: fixed;
     display: none;
-    opacity: 0;
     top:0;
     left: 0;
     height: 100vh;
     width: 100vw;
     background: rgba(0,0,0, 0.5);
     z-index: 100;
-    transition: opacity 2s linear;
 }
 .main-header {
     width: 100%;
@@ -141,10 +139,6 @@ main {
 .nav-item__list a:active {
  color: black;
  border-bottom: 3px solid white; 
-}
-.nav-item__list--touch {
- /* animation: name duration timing-function delay iteration-count direction fill-mode; */
- animation: buzzi 200ms 2s 8 ease-out none;
 }
 .nav-item__list--touch a {
  color: black;
@@ -264,18 +258,4 @@ main {
 
 .open {
     display: block !important; 
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-@keyframes buzzi {
-   0% {
-       transform: rotateZ(0deg);
-   }
-   50% {
-       transform: rotateZ(-10deg);
-   }
-   100% {
-       transform: rotateZ(10deg)
-   }
 }
