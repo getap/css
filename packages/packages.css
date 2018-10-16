@@ -1,24 +1,34 @@
+@font-face {
+    font-family: "spaceMono-Bold", monospace;
+    src: url("../spaceMono-Bold.ttf") format("truetype");
+    /* font-display: auto; */
+}
+@font-face {
+    font-family: "spaceMono-Regular", monospace;
+    src: url("../spaceMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
 main {
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 
 .page-background {
     position: fixed;
-    background: url("../images/plan.jpg");
-    width: 100%;
-    height: 100%;
+    background: url("../images/plan.jpg") center/cover;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    opacity: 0.4;
-    filter: alpha(opacity=50);
+    filter: grayscale(50%);
 }
 
 .packages {
    border: 2px solid darkgreen;
-   margin: 30px 0;
+   margin: 1.8rem 0;
    width: 75%;
    border-left: none;
    position: relative;
+   overflow: hidden;
 }
 .packages:active,
 .packages:hover {
@@ -29,27 +39,44 @@ main {
 .packages a {
     text-decoration: none;
     color: inherit;
-    padding: 30px;
+    padding: 1.8rem;
     display: block;
 }
 .package__badge{
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     color: white;
     background: #ff5454;
-    margin: 20px;
-    font-size: 20px;
-    padding: 9px;
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 0.562rem;
+    transform: rotateZ(45deg) translateX(2rem) translateY(-1rem);
+    width: 10rem;
+    text-align: center;
+    transform-origin: center;
 }
 .package__subtitle{
     color: lightcoral;
 }
 .package__info {
   border: 1px solid yellowgreen;
-  font-size: 20px;
-  padding: 10px;
+  /* font-size: 1.25rem; */
+  padding: 0.62rem;
   background: #fff;
+  font: 700 1.2rem 'Space Mono', monospace;
+  /* font: status-bar; */
+  /* font-family: 'Space Mono', monospace; */
+  /* font-weight: 400; */
+  /* font: italic small-caps 700 1.2rem/1 "spaceMono-Bold", monospace ; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-weight: 600; */
+  /* font-style: italic; */
+  /* line-height: 2; */
+  /* text-decoration: underline; */
+  /* text-decoration: overline wavy red; */
+  /* text-shadow: 2px 2px 6px #4f4f4f; */
+  font-variant: small-caps;
 }
 
 .package__info:active,
@@ -86,4 +113,26 @@ main {
 }
 #premium .package__subtitle {
     color:  rgba(236, 67, 55, 0.9);   
+}
+
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto; 
+        max-width: 1300px; 
+    }
+}
+@media (min-width: 40rem) {
+    .packages {
+        border: 2px solid darkgreen;
+}
+    #free {
+        border-right: 2px solid darkgreen;
+} 
+
+    #free:hover,                        
+    #free:active {
+       border-right-color: #ff5454;
+}
+
 }

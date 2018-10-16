@@ -4,27 +4,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>uHost</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link rel="stylesheet" type="text/css" media="screen" href="../shared.css" />
     <link rel="stylesheet" href="packages.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" 
-    rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=VT323&amp;subset=latin-ext,vietnamese"
-     rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Monoton"
-      rel="stylesheet">
-
-      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" 
-      rel="stylesheet">
 </head>
 
 <body>
+        <div class="backdrop"></div>
     <div class="page-background"></div>
     <header class="main-header">
         <div>
-            <a href="../index.html" class="main-header__logo">uHost</a>
-             
+                <button class="toggle-button">
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                    </button>
+            <a href="../index.html" class="main-header__logo">
+               <img src="../images/Logo-uHost.png" alt="UHost"></a>  
         </div>
         <nav class="nav-item">
             <ul class="nav-item__lists">
@@ -32,15 +29,22 @@
                     <a href="index.html">Packages</a>
                 </li>
                 <li class="nav-item__list">
-                    <a href="cutomers/index.html">Customers</a>
+                    <a href="../customers/index.html">Customers</a>
                 </li>
                 <li class="nav-item__list nav-item__list--touch">
-                    <a href="start-hosting/index.html">Start Hosting</a>
+                    <a href="../start-hosting/index.html">Start Hosting</a>
                 </li>
             </ul>
         </nav>
     </header>
-
+    <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__item--link">Packages</a></li>
+                <li class="mobile-nav__item"><a href="../customers/index.html" class="mobile-nav__item--link">Customers</a></li>
+                <li class="mobile-nav__item"><a href="../start-hosting/index.html">Start Hosting</a></li>
+            </ul>
+        </nav>
+    
     <main>
         <section class="packages" id="plus">
             <a href="#">
@@ -77,6 +81,6 @@
              </ul>
          </nav>
      </footer>   
-     
+     <script src="../shared.js"></script>
 </body>
 </html>
